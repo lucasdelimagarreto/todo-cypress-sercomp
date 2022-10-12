@@ -1,8 +1,7 @@
 
 # Software Testing Mini Course
 
-In the mini-course, the topic of tests was studied, 
-where we applied E2E tests in the web application
+software testing minicourse applying E2E tests with Cypress
 
 ## Roadmap
 
