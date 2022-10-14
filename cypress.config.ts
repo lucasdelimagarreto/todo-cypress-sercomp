@@ -6,5 +6,8 @@ export default defineConfig({
       // implement node event listeners here
     },
     video: false,
+    baseUrl: 'http://localhost:5173/',
+    watchForFileChanges: true
   },
+  
 });
