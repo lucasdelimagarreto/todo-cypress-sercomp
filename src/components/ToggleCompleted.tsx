@@ -13,6 +13,7 @@ const ToggleCompleted = ({ isCompleted, onClick }: Props) => {
   return (
     <label
       className={`${labelClass} h-5 w-5 rounded-full p-px hover:bg-gradient-to-br hover:from-cyan-400 hover:to-fuchsia-500`}
+      data-cy="toggle-completed-todo"
     >
       <div className={`${divClass} flex h-full w-full items-center justify-center rounded-full`}>
         {isCompleted && <img src={iconCheck} alt="check" />}

@@ -33,7 +33,7 @@ const ListItem = ({ data, onClickToggle, onClickDelete, onDragStart, onDragEnter
         {data.title}
       </span>
 
-      <button className="h-3 w-3 lg:h-4 lg:w-4" onClick={onClickDelete}>
+      <button className="h-3 w-3 lg:h-4 lg:w-4" onClick={onClickDelete} data-cy="delete-button">
         <img className="group-hover:block xl:hidden" src={iconCross} alt="delete task" />
       </button>
     </li>

@@ -93,10 +93,11 @@ function App() {
             pattern="[^\s]+(\s+[^\s]+)*"
             value={inputTitle}
             onChange={e => setInputTitle(e.currentTarget.value)}
+            data-cy="input"
           />
         </form>
 
-        <ul className="rounded-md bg-white shadow-xl dark:bg-dark-blue">
+        <ul className="rounded-md bg-white shadow-xl dark:bg-dark-blue" data-cy="list">
           {displayTodos.map((todo, index) => {
             return (
               <ListItem
@@ -112,7 +113,7 @@ function App() {
           })}
 
           <li className="relative flex items-center justify-between px-4 py-3 text-xs text-slate-400 sm:text-sm">
-            <span>
+            <span data-cy="display">
               {activeTodos.length} item{activeTodos.length > 1 && 's'} left
             </span>
 
