@@ -93,4 +93,18 @@ describe('Todo', () => {
 
     counterTodos.should('have.text', '1 item left')
   })
+
+  it('should delete all todos completed ', () => {
+    cy.dataCy('toggle-completed-todo').click()
+    cy.dataCy('input')
+      .type('todo one{enter}')
+      .clear()
+      .type('todo two{enter}')
+    
+    cy.dataCy('list').find('li').should('have.length', 3)
+
+    cy.contains('Clear Completed').click()
+
+    cy.dataCy('list').find('li').should('have.length', 1)
+  })
 })
