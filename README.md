@@ -11,7 +11,7 @@ software testing minicourse applying E2E tests with Cypress
     - the test pyramid
 - [] Know application
 - [] Crypess - first test
-- [] Let's create the test cases
+- [] [Let's create the test cases](https://gist.github.com/jairosl/acbea10bc452588b58afa7c1a25df8d3)
 - [] Talk is cheap show me the code
 
 
