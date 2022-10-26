@@ -88,7 +88,7 @@ function App() {
           <ToggleCompleted isCompleted={inputChecked} onClick={e => setInputChecked(e.currentTarget.checked)} />
           <input
             className="mt-1 ml-4 flex-1 text-sm outline-none dark:bg-dark-blue dark:text-gray-300 md:text-base"
-            placeholder="Create a new todos..."
+            placeholder="Jogar Bola"
             required
             pattern="[^\s]+(\s+[^\s]+)*"
             value={inputTitle}
